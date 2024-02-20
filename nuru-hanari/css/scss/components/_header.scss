@@ -1,0 +1,256 @@
+// base/components/header.scss
+@use "../base/global.scss" as *;
+
+/* header
+--------------------------------------------------------*/
+.header {
+  width: 100%;
+  background: $color_white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+
+  &__inner {
+    width: 82.4%;
+    @include flexEnd;
+    flex-wrap: nowrap;
+    align-items: normal;
+    row-gap: 93px;
+    margin-left: auto;
+
+    @media (max-width: 1880px) {
+      width: 92%;
+    }
+  }
+
+  &__contact {
+    background: $color_primary;
+    @include flexColumn;
+    justify-content: center;
+    flex: 0 1 260px;
+  }
+
+  &__contact-svg {
+    width: 19%;
+    padding-top: 1px;
+  }
+
+  &__contact-text {
+    font-size: rem(24);
+    color: #fff;
+    letter-spacing: 0.2em;
+
+    @media (max-width: 1520px) {
+      font-size: rem(16);
+    }
+  }
+}
+
+.header.header_transform {
+  box-shadow: 7px 5px 4px -2px rgba(71, 34, 0, 0.13);
+  transition: padding 0.5s, background-color 0.5s;
+}
+
+.header-nav {
+  flex: 100;
+
+  &__menu {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+    @media (max-width: 1650px) {
+      width: 88%;
+    }
+
+    @include mq(lg) {
+      width: 93%;
+    }
+
+    @media (max-width: 1290px) {
+      column-gap: 30px;
+    }
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__menu-item {
+    & + & {
+      padding-left: 77px;
+
+      @media (max-width: 1880px) {
+        padding-left: 50px;
+      }
+    }
+    &:nth-child(3) {
+      padding-right: 325px;
+
+      @media (max-width: 1291px) {
+        padding-right: 83px;
+      }
+
+      @include mq(sm) {
+        padding-right: 0;
+      }
+    }
+
+    &:nth-child(6) {
+      padding-right: 93px;
+    }
+  }
+
+  &__link {
+    font-size: rem(28);
+    color: $color_brown;
+    text-decoration: none !important;
+    display: block;
+    padding: 43px 0 34px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+
+    @include mq(lg) {
+      font-size: rem(22);
+      padding: 22.83px 0;
+    }
+  }
+
+  &__logo {
+    max-width: 132px;
+    background: $color_white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+  &__logo-link {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+}
+
+.header-nav .header-nav__logo {
+  padding: 17px 52px;
+  box-sizing: content-box;
+}
+
+.header-nav__link.header-height_transform {
+  padding: 37px 0 27px;
+}
+
+.current {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    border-radius: 100vh;
+    bottom: -1px;
+  }
+
+  &:hover::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    border-radius: 100vh;
+    bottom: -1px;
+  }
+}
+
+/* drawer変更箇所
+--------------------------------------------------------*/
+.drawer-toggle,
+.drawer-hamburger {
+  display: none;
+
+  @include mq(sm) {
+    display: block;
+  }
+}
+
+.drawer-hamburger {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 300;
+  display: block;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+  width: 100%;
+  height: 3px;
+  background-color: #5a4c43e3;
+  border-radius: 5px;
+}
+
+.drawer-hamburger-icon {
+  .drawer-open & {
+    background-color: transparent;
+  }
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  @include mq(sm) {
+    right: 0;
+  }
+}
+
+.drawer--right .drawer-hamburger,
+.drawer--right.drawer-open .drawer-nav,
+.drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+  @include mq(sm) {
+    right: 0;
+    transform: translateY(0%);
+  }
+}
+
+body .drawer--right,
+.drawer-nav {
+  @include mq(sm) {
+    right: 0;
+    -webkit-transition: right 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: right 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateX(100%);
+  }
+}
+
+.drawer-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.drawer-menu-item:hover {
+  text-decoration: none;
+}

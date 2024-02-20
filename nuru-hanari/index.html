@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dining-Bar-ETELLIA</title>
+	<meta name="description" content="ひとりでも、仲間とでも。アットホームなダイニングバーで素敵なひとときを。">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css"
+		media="screen and (max-width:767px)">
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+	<!-- original -->
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="drawer drawer--right">
+	<!-- header ここから -->
+	<header id="header" class="header js-header">
+		<div class="header__inner">
+			<button type="button" class="drawer-toggle drawer-hamburger" id="js-hamburger-menu">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+			<nav class="drawer-nav header-nav">
+				<ul class="drawer-menu header-nav__menu">
+					<li class="header-nav__menu-item current">
+						<a class="drawer-menu-item header-nav__link" href="index.html">TOP</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a class="drawer-menu-item header-nav__link" href="#">NEWS</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a class="drawer-menu-item header-nav__link" href="#">CONCEOT</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a class="drawer-menu-item header-nav__link" href="#">MENU</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a class="drawer-menu-item header-nav__link" href="#">CHEF</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a class="drawer-menu-item header-nav__link" href="#">ACCESS</a>
+					</li>
+					<li class="header-nav__menu-item header-nav__logo">
+						<a class="drawer-menu-item header-nav__logo-link" href="index.html">
+							<img src="./images/img_logo.png" alt="logo画像">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__contact">
+				<div class="header__contact-svg">
+					<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M50.976 42.1421C50.8758 41.5229 50.4876 40.9937 49.9062 40.6793L41.3052 35.6117L41.2344 35.5721C40.8738 35.3915 40.4755 35.299 40.0722 35.3021C39.3516 35.3021 38.6634 35.5751 38.1858 36.0539L35.6472 38.5937C35.5386 38.6969 35.1846 38.8463 35.0772 38.8517C35.0478 38.8493 32.1234 38.6387 26.7396 33.2543C21.3654 27.8813 21.1374 24.9479 21.1356 24.9479C21.1386 24.7979 21.2862 24.4451 21.3912 24.3359L23.556 22.1717C24.3186 21.4073 24.5472 20.1401 24.0948 19.1585L19.314 10.1627C18.9666 9.44746 18.2916 9.00586 17.5428 9.00586C17.013 9.00586 16.5018 9.22546 16.1022 9.62446L10.2012 15.5123C9.63541 16.0751 9.14821 17.0591 9.04201 17.8511C8.99041 18.2297 7.94341 27.2669 20.3334 39.6587C30.852 50.1761 39.054 50.9933 41.319 50.9933C41.5948 50.9968 41.8706 50.9826 42.1446 50.9507C42.9342 50.8451 43.917 50.3591 44.4792 49.7957L50.3754 43.9001C50.8566 43.4165 51.0762 42.7775 50.976 42.1421Z"
+							fill="#FFFDF6">
+					</svg>
+				</div>
+				<p class="header__contact-text">050-2222-4156</p>
+			</div>
+		</div>
+	</header>
+	<!-- header ここまで -->
+
+	<main id="wrapper" class="wrapper">
+		<!-- top -->
+		<section id="top" class="top">
+			<div class="top__inner">
+				<p class="top__title--top">美味しい時間を仲間と</p>
+				<p class="top__title--bottom"><span class="top__title--bottom-span">Dining Bar</span>ETELLIA</p>
+			</div>
+		</section>
+		<!-- /top -->
+
+		<!-- news -->
+		<section id="news" class="news section">
+			<div class="news__inner inner">
+				<div class="util-title-decoration"><img src="./images/img_title-text.png" alt="タイトルあしらい"></div>
+				<h2 class="util-title">
+					<span class="util-title__text">News</span>
+				</h2>
+				<ul class="news-list">
+					<li class="news-list__item">
+						<a href="news-list__link">
+							<div class="news-list__img">
+								<img src="./images/img_news-item1.jpg" alt="ニュース画像">
+							</div>
+							<div class="news-list__message">
+								<p class="news-list__message-title">リニューアルオープンのお知らせ</p>
+								<p class="news-list__message-text">長年愛されてきた、居酒屋よしだがDining Bar
+									ETELLIAとしてリニューアルオープンいたしました!
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="news-list__item">
+						<a href="news-list__link">
+							<div class="news-list__img">
+								<img src="./images/img_news-item2.jpg" alt="ニュース画像">
+							</div>
+							<div class="news-list__message">
+								<p class="news-list__message-title">春限定！スペシャルカクテル</p>
+								<p class="news-list__message-text">いちごとラズベリーの甘酸っぱいピンクのカクテルが春限定で登場！</p>
+							</div>
+						</a>
+					</li>
+					<li class="news-list__item">
+						<a href="news-list__link">
+							<div class="news-list__img">
+								<img src="./images/img_news-item3.jpg" alt="ニュース画像">
+							</div>
+							<div class="news-list__message">
+								<p class="news-list__message-title">6月のおすすめメニュー</p>
+								<p class="news-list__message-text">国産和牛の柔らかい赤みのステーキを6月いっぱいお値打ち価格にてご提供中!</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="util-footer news-footer">
+					<a href="#" class="util-btn news-footer__btn" target="_blank">
+						<span class="util-btn__text">VIEW MORE</span>
+						<span class="util-btn__arrow">
+							<svg viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 6.75H48L42.5 1.25" stroke="#6C2E2E">
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- /news -->
+
+		<!-- concept -->
+		<section id="concept" class="concept section">
+			<div class="concept__inner">
+				<div class="util-title-decoration"><img src="./images/img_title-text.png" alt="タイトルあしらい"></div>
+				<h2 class="util-title">
+					<span class="util-title__text">Concept</span>
+				</h2>
+				<div class="concept-message">
+					<p class="concept-message__title">ひとりでも、仲間とでも。<br>アットホームなダイニングバーで<span class="inlineblock-item">素敵なひとときを。</span></p>
+					<div class="concept-message__image">
+						<p class="concept-message__image-text">Have a good time!</p>
+						<div class="concept-message__image-box">
+							<img src="./images/img_home-concept-illustration1.png" alt="コンセプトイラスト画像">
+						</div>
+					</div>
+				</div>
+				<ul class="concept-list">
+					<li class="concept-list__item" data-aos="fade-right">
+						<div class="concept-list__img">
+							<img src="./images/img_home-concept-item1.jpg" alt="コンセプト画像">
+						</div>
+						<div class="concept-list__message concept-list__message1">
+							<p class="concept-list__title">
+								ひとりで来ても<br class="is-pc">大事なデートでも<br class="is-pc"><span class="inlineblock-item">友人との女子会でも</span></p>
+							<p class="concept-list__text concept-list__text1">
+								どんなシーンでも利用しやすい、飾らないアットホームさが人気のダイニングバーです。
+							</p>
+							<p class="concept-list__text">
+								ダイニングバーだけど、料理が美味しくて通う常連さんがいたり、<br>
+								シェフとお話がしたくて通う常連さんもいたり。<br>
+								もちろん、お酒を楽しむ方も。<br>
+								美味しい料理とお酒を楽しみながら、各々が自由に過ごせます。
+							</p>
+							<p class="concept-list__text">一度、お越しになりませんか？<br>きっとまた訪れたくなりますよ。</p>
+							<div class="concept-list__illust">
+								<div class="concept-list__illust--champagne">
+									<img src="./images/img_home-concept-illustration2.png" alt="コンセプトイラスト画像">
+								</div>
+								<div class="concept-list__illust--pizza">
+									<img src="./images/img_home-concept-illustration3.png" alt="コンセプトイラスト画像">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="concept-list__item"  data-aos="fade-left">
+						<div class="concept-list__img concept-list__img--second">
+							<img src="./images/img_home-concept-item2.jpg" alt="コンセプト画像">
+						</div>
+						<div class="concept-list__message concept-list__message2">
+							<p class="concept-list__title">その場にいるお客様、<span class="inlineblock-item">全員が楽しめるように</span><br>笑顔の絶えない楽しい時間を
+							</p>
+							<p class="concept-list__text">美味しい料理と美味しいお酒は、心を満たし幸せな気分にしてくれる。<br>
+								シェフのそんな想いがお客様にも伝わり、Dinig Bar ETELLIAはいつも笑顔で溢れています。
+							</p>
+							<p class="concept-list__text">
+								嫌なことがあった日はそれを忘れさせてくれ、良いことがあった日は更に良い想い出に。<br>
+								お帰りの時には誰もが笑顔で「また来るね！」と言ってもらえるよう、素敵なお時間をご提供いたします。
+							</p>
+							<div class="concept-list__illust concept-list__illust--second">
+								<div class="concept-list__illust--wine">
+									<img src="./images/img_home-concept-illustration4.png" alt="コンセプトイラスト画像">
+								</div>
+								<div class="concept-list__illust--grape">
+									<img src="./images/img_home-concept-illustration5.png" alt="コンセプトイラスト画像">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /concept -->
+
+		<!-- chef -->
+		<section id="chef" class="chef section">
+			<div class="chef__inner inner">
+				<div class="util-title-decoration"><img src="./images/img_title-text.png" alt="タイトルあしらい"></div>
+				<h2 class="util-title">
+					<span class="util-title__text">Chef</span>
+				</h2>
+				<div class="chef-content">
+					<div data-aos="flip-left">
+						<div class="chef-content__thumb">
+							<img src="./images/img_home-chef.jpg" alt="シェフ画像">
+						</div>
+					</div>
+					<div class="chef-content__message">
+						<p class="chef-content__title">NAOTO YOSHIDA</p>
+						<p class="chef-content__text">
+							気軽に立ち寄れて、そこに行ったら「仲間」に会える。<br>
+							そんなお店を生まれ育った町、江古田で開くのが夢だった。
+						</p>
+						<p class="chef-content__text">店名のETELLIAは、ギリシャ語で仲間や集まりを意味する。<br>
+							Dining Bar ETELLIAを通じて、色々な方が集まりになっていき地域を活性化させたいという想いを込めた。
+						</p>
+						<p class="chef-content__text">趣味は釣りと祭り。チャキチャキの江戸っ子で気さくなおっちゃん。<br>
+							得意料理は創作洋食。お客さんの「 美味しかった！また来るよ！」が一番嬉しい。
+						</p>
+						<div class="chef-content__illust">
+							<div class="chef-content__illust--bread">
+								<img src="./images/img_home-chef-illustration.png" alt="シェフイラスト画像">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /chef -->
+
+		<!-- menu -->
+		<section id="menu" class="menu">
+			<div class="menu__inner">
+				<div class="util-title-decoration"><img src="./images/img_title-text.png" alt="タイトルあしらい"></div>
+				<h2 class="util-title">
+					<span class="util-title__text">Menu</span>
+				</h2>
+				<div class="menu-content">
+					<div class="menu-content__message">
+						<p class="menu-content__text">定番のグランドメニューから季節のおすすめ料理、
+							デザートまで豊富なメニューをご用意しております。誕生日、プロポーズ、同窓会など特別な日にご利用の場合は、
+							ご予約時に料理のご相談も承っております。お気軽にご相談ください。
+						</p>
+						<p class="menu-content__text">Dining Bar ETELLIAでしか食べられない、こだわりの料理の数々をお楽しみください。</p>
+					</div>
+					<div class="menu__btn">
+						<div class="util-footer menu-footer">
+							<a href="#" class="util-btn menu-footer__btn" target="_blank">
+								<span class="util-btn__text">DISH</span>
+								<span class="util-btn__arrow">
+									<svg viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 6.75H48L42.5 1.25" stroke="#ce3256">
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="util-footer menu-footer">
+							<a href="#" class="util-btn menu-footer__btn" target="_blank">
+								<span class="util-btn__text">DRINK</span>
+								<span class="util-btn__arrow">
+									<svg viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 6.75H48L42.5 1.25" stroke="#ce3256">
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu__bg">
+				<div class="menu__bg-img menu__bg-img--salad"><img src="./images/img_home-menu-item1.png"
+						alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--egg"><img src="./images/img_home-menu-item2.png" alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--avocado"><img src="./images/img_home-menu-item3.png"
+						alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--pasta"><img src="./images/img_home-menu-item4.png"
+						alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--pizza"><img src="./images/img_home-menu-item5.png"
+						alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--tiramisu"><img src="./images/img_home-menu-item6.png"
+						alt="メニュー背景画像">
+				</div>
+				<div class="menu__bg-img menu__bg-img--chicken"><img src="./images/img_home-menu-item7.png"
+						alt="メニュー背景画像">
+				</div>
+			</div>
+		</section>
+		<!-- /menu -->
+
+		<!-- access -->
+		<section id="access" class="access section">
+			<div class="access__inner inner">
+				<div class="util-title-decoration"><img src="./images/img_title-text.png" alt="タイトルあしらい"></div>
+				<h2 class="util-title">
+					<span class="util-title__text">Access</span>
+				</h2>
+				<div class="access-content">
+					<div class="access-content__address">
+						<p class="access-content__address-title">Dining Bar ETELLIA</p>
+						<p class="access-content__address-text">〒176-0003<br>東京都練馬区羽沢1-11-9</p>
+						<p class="access-content__address-text">050-2222-4156</p>
+						<div class="util-footer access-footer">
+							<a href="#" class="util-btn access-footer__btn" target="_blank">
+								<span>Google mapへ</span>
+								<span class="util-btn__arrow">
+									<svg viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 6.75H48L42.5 1.25" stroke="#6C2E2E">
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+					<table class="access-table">
+						<tbody>
+							<tr class="access-table__row">
+								<th class="access-table__head">営業時間</th>
+								<td class="access-table__body">20:00~翌0:30</td>
+							</tr>
+							<tr class="access-table__row">
+								<th class="access-table__head">定休日</th>
+								<td class="access-table__body">日曜日</td>
+							</tr>
+							<tr class="access-table__row">
+								<th class="access-table__head">支払方法</th>
+								<td class="access-table__body">現金、クレジットカード<span class="inlineblock-item">(VISA、MasterCard、JCB)</span></td>
+							</tr>
+							<tr class="access-table__row">
+								<th class="access-table__head">席数</th>
+								<td class="access-table__body">カウンター8席、<span class="inlineblock-item">4人掛けテーブル席&times;2 <span class="inlineblock-item">全16席</span></span></td>
+							</tr>
+							<tr class="access-table__row">
+								<th class="access-table__head">禁煙<span class="access-table__head--dot">・</span>
+									<span class="access-table__head--text">喫煙</span>
+								</th>
+								<td class="access-table__body">禁煙</td>
+							</tr>
+							<tr class="access-table__row">
+								<th class="access-table__head">アクセス</th>
+								<td class="access-table__body">新桜台駅４番出口 徒歩3分<br>
+									江古田駅北口 徒歩7分</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="iframe-wrap">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.3880544750438!2d139.67067484542198!3d35.74146581097669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed3fd0cfa5d5%3A0x13c6cf4574a0a9ea!2z44CSMTc2LTAwMDMg5p2x5Lqs6YO957e06aas5Yy657695rKi77yR5LiB55uu77yR77yR4oiS77yZ!5e0!3m2!1sja!2sjp!4v1699441960868!5m2!1sja!2sjp"
+					style="border: 0" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<a href="https://www.google.co.jp/maps/place/%E3%80%92176-0003+%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E7%BE%BD%E6%B2%A2%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%99/@35.7414039,139.6684937,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed3fd0cfa5d5:0x13c6cf4574a0a9ea!8m2!3d35.7413996!4d139.6710686!16s%2Fg%2F11clmdpr44?hl=ja&entry=ttu"
+					class="iframe-wrap__link" target="_blank" rel="noopener">
+				</a>
+			</div>
+		</section>
+		<!-- /access -->
+
+		<!-- instagram -->
+		<section id="instagram" class="instagram section">
+			<div class="instagram__inner inner">
+				<p class="instagram-title-subtext">Follow Me!</p>
+				<h2 class="instagram-title">@Dining-Bar-ETELLIA</h2>
+				<div class="instagram-content">
+					<div class="instagram-content__message">
+						<div class="instagram-content__message-logo">
+							<div class="instagram-content__icon">
+								<img src="./images/img_sns-instagram-icon.png" alt="インスタグラム画像">
+							</div>
+							<div class="instagram-content__text--img">
+								<img src="./images/img_sns-instagram-text.png" alt="インスタグラム画像">
+							</div>
+						</div>
+						<p class="instagram-content__message-text">おすすめの料理やお酒、お店の様子やイベントなどを配信中。<br>
+							ときどき投稿される、シェフの独り言コーナーも要Check!</p>
+						<div class="util-footer instagram-footer">
+							<a href="#" class="util-btn instagram-footer__btn" target="_blank">
+								<span>Instagramへ</span>
+								<span class="util-btn__arrow">
+									<svg viewBox="0 0 50 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 6.75H48L42.5 1.25" stroke="#ce3256">
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+					<ul class="instagram-content__list">
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img1.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img2.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img3.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img4.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img5.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img6.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img7.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+						<li class="instagram-content__list-item">
+							<a href="#" class="instagram-content__link"><img src="./images/home-Instagram-img8.jpg"
+									alt="インスタグラムサムネ画像"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- /instagram -->
+
+		<!-- reserve -->
+		<section id="reserve" class="reserve">
+			<div class="reserve__inner">
+				<div class="reserve-content">
+					<h2 class="util-title reserve-title">Reserve</h2>
+					<p class="reserve-content__message">ご予約・お問い合わせは<span class="inlineblock-item">お電話で承っております。</span><br>
+						お気軽にお電話ください。
+					</p>
+					<p class="reserve-content__tel">050-2222-4156</p>
+					<div class="reserve-time">
+						<dl class="reserve-time__list reserve-time__list--open">
+							<dt class="reserve-time__head reserve-time__head--open">OPEN</dt>
+							<dd class="reserve-time__body reserve-time__body--open">月〜土 20:00 - 翌0:30</dd>
+						</dl>
+						<dl class="reserve-time__list reserve-time__list--close">
+							<dt class="reserve-time__head reserve-time__head--close">CLOSE</dt>
+							<dd class="reserve-time__body reserve-time__body--close">日曜日</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="reserve-img">
+					<img src="./images/img_reserve-item.jpg" alt="リザーブ画像">
+				</div>
+			</div>
+		</section>
+		<!-- /reserve -->
+
+		<!-- footer -->
+		<section id="footer" class="footer">
+			<div class="footer__inner">
+				<p class="footer__copyright">&copy; 2023 Dining Bar ETELLIA</p>
+			</div>
+		</section>
+		<!-- /footer -->
+	</main>
+	<script src="./js/script.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
